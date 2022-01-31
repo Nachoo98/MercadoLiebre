@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MercadoLiebre</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Ahora agrego font de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+<!-- Ahora agrego  los icono -->
+<script src="https://kit.fontawesome.com/68e050386e.js" crossorigin="anonymous"></script>
+<!-- Diseño responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="one">
+            <div class="logo"><img src="/img/logo-mercado-liebre.svg"></div> 
+            <br>
+            <div class="buscador"><input type="search" placeholder="Buscar Productos, marcas"> 
+             <button type="search"><i class="fas fa-search"></i></button></div>
+            <div class="ejemplo"> <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito </div> 
+             <br>
+        </div>
+    <ul type="None" class="cuerpo_texto">
+           <div class="izquierda"> 
+                <li>Ofertas</li>
+                <li>Tiendas Oficiales</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+           </div>
+           <div class="derecha">
+                <li>Creá tu Cuenta <i class="far fa-address-card"></i></li>
+                <li>Ingresá <i class="fas fa-sign-in-alt"></i></li>
+                <li>Mis Compras <i class="fas fa-sign-in-alt"></i></li>
+           </div>
+    </ul>
+    <p id="menu"><button id="menu2" type="menu"><i class="fas fa-bars"></i></button></p>
+    <br>
+    </header>
+
+    <main>
+        <form action="/views/register.html" method="POST">
+            <p>
+                <input type="text" name="usuario" placeholder="Nombre de usuario" required pattern="[A-Za-z0-9]{5,20}"
+                title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 20">
+            </p>
+            <p>
+                <input type="password" name="password" placeholder="Contraseña" required pattern="[A-Za-z0-9]{5,20}"
+                title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 20">
+            </p>
+            <p>
+            <div class="login_button"><a href="/home"><input type="submit" value="Enviar"></a></div>
+            </p>
+            </form>
+    </main>
+
+    <footer>
+        <div class="xd">
+            <div class="foot">
+                <div class="icono"><i class="fas fa-credit-card"></i></div>
+                <h3>Pagá con tarjeta o efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.</p>
+                <p>¡Y siempre es seguro!</p>
+            </div>
+    
+            <div class="foot">
+                 <div class="icono"><i class="fas fa-gift"></i></div>
+                 <h3>Envío gratis desde $ 2.500</h3>
+                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos.</p>
+                 <p>Es un beneficio de Mercado Puntos.</p>
+            </div>
+    
+            <div class="foot">
+                 <div class="icono"><i class="fas fa-user-shield"></i></div>
+                 <h3>Seguridad, de principio a fin</h3>
+                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+             </div>
+    
+        </div>
+            <p id="ej"> Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+</body>
+</html>

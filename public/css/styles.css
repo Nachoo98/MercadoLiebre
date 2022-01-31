@@ -1,0 +1,331 @@
+header{
+    background-color: #EAC926;
+    margin-bottom: -2%;
+}
+
+
+.logo{
+    width:50%;
+ margin: 2%;
+
+}
+.buscador{
+    width: 30%; 
+}
+
+.ejemplo{
+text-align: center;
+font-size:12px;
+}
+
+body{
+    font-family: 'Roboto';
+}
+main{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+ .xd{
+    text-align: center;
+} 
+#ej{
+    color:#ebebeb;
+}
+#menu{
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+#menu2{
+    color:white;
+   background-color: #1259c3;
+}
+
+.icono{
+     size: 2em; 
+    color:#1259c3;
+     margin-bottom: 10px; 
+     transition:color 0.5s;
+}
+.icono :hover{
+    color:green;
+    }
+
+.login_button{ 
+    background-color: #eaeaea;
+    color:#000;
+     transition: all, 0.5s;
+}
+/* ------------------------------------------------------------------------------------ */
+section.banner img{
+    width: 100%;
+}
+
+.ultima_visita{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+   
+
+main section article :hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .descripciones{
+    display: block;
+}
+
+main article:hover .descripciones{
+    display: block;
+}
+
+
+.login_button :hover{
+   background-color: #0022AA;
+   color:#fff;
+}
+
+main section article i{
+    color:#39b54a;
+    display:block;
+    font-size: 16px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute; 
+    right: 20px;
+    top: -15px; 
+}
+.descuentos{
+    font-size: 16px;
+    color:#39b54a;
+    width: 70%;
+}
+.precios{
+    font-size: 18px;
+    width: 30%;
+}
+.derecha li a{
+    text-decoration: none;
+    color: #000;
+}
+.titulares{
+    font-size: 24px;
+}
+
+.descripciones{
+    font-size: 16px;
+    color:#666;
+    display: none;
+    margin-top: 20px;
+
+}
+main section h3{
+    margin: 20px 0px;
+}
+main section .productos article i{
+    
+    transition: transform 1s;
+}
+main section .productos article:hover i{
+    transform: rotate(-90deg);
+}
+
+.cuerpo_texto{
+    font-size: 12px;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: baseline;
+    position: relative;
+}
+
+article{   
+    margin: 15px;
+    border-top: solid 1px #ebebeb; 
+    background-color:white;
+    width: 90%;
+    margin-left: 5%;  
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+     flex-direction: row; 
+    align-items: baseline; 
+}
+ .imagen{
+    width:90%;
+    height:40%;    
+    margin-left: 5%; 
+    margin-bottom: -20px;
+}  
+.articulo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.one{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    }
+
+form{
+    margin-left: 3%;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+ @media (min-width: 769px){/*PC */
+    main section .productos article{
+        width: 20%;
+    }
+    .productos{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .imagen{
+        width:100%;
+        height:70%;    
+        margin-left: 0%; 
+    }  
+    main section article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main section article i{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        right:5%;
+        top: 65%;
+    }
+    #menu{
+        visibility: hidden;
+    }
+    .cuerpo_texto{
+        margin-left:-8%;
+        margin-bottom: -2%;
+    }
+    .izquierda{
+        width: 40%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         
+    }
+    .derecha{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer{
+        margin-top: 3%;
+    }
+}
+/* ------------------------------------------------------------------------------------ */
+@media (max-width: 769px){/*Tablet*/
+    main section div.productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    main section div.productos article{
+        width: 45%;
+    }
+.cuerpo_texto{
+    visibility: hidden;
+}
+    .precios,
+    .descuentos{
+        width: 50%;
+    }
+
+    main section article i{
+        width: 20px;
+        height: 20px;
+        right:6%;
+        top: 68%;
+    }
+    footer{
+        margin-top: 3%;
+    }
+    #menu{
+        margin-top: -15%;
+    }
+    .one{
+        width: 100%;
+        flex-wrap: wrap;
+        }
+        .buscador{
+            width: 51%;
+        }
+        .logo{
+            width: 40%;
+        }
+        .ejemplo{
+            margin-left: 20%;
+        }
+}
+/* ------------------------------------------------------------------------------------ */
+@media (max-width: 365px){/*Smartphone*/
+    main section div.productos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    main section div.productos article{
+        width: 70%;
+    }
+.cuerpo_texto{
+    visibility: hidden;
+}
+    .precios,
+    .descuentos{
+        width: 50%;
+    }
+
+    main section article i{
+        top: 68%;
+    }
+    footer{
+        margin-top: 3%;
+    }
+    #menu{
+        margin-top: -15%;
+    }
+
+    .imagen{
+        width: 95%;
+        height: 64%;
+    }
+}
